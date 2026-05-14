@@ -1,0 +1,35 @@
+{
+  "name": "anime-op-ed-timeline",
+  "version": "1.0.0",
+  "description": "Anime OP/ED Timeline - 动漫曲目时间轴整理工具",
+  "type": "module",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uikit": "^3.25.16",
+    "vue": "^3.5.34"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^7.0.0",
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^1.0.0",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/compiler-sfc": "^3.5.34",
+    "postcss": "^8.5.14",
+    "rollup": "^4.60.3",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-serve": "^3.0.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "vite": "^8.0.12"
+  }
+}
