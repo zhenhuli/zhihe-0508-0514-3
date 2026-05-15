@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  background: $dark-bg;
+  color: $dark-text;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#__nuxt {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, $primary-color, $accent-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: $dark-text;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: $dark-text;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: $dark-text-muted;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all $transition-normal;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: $border-radius-sm;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all $transition-normal;
+
+  &-primary {
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    color: white;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-lg;
+    }
+  }
+
+  &-secondary {
+    background: $dark-card;
+    color: $dark-text;
+    border: 1px solid $dark-border;
+    
+    &:hover {
+      background: $dark-border;
+    }
+  }
+
+  &-success {
+    background: $success-color;
+    color: white;
+    
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}
+
+.card {
+  background: $dark-card;
+  border-radius: $border-radius;
+  border: 1px solid $dark-border;
+  padding: 24px;
+  box-shadow: $shadow-md;
+  transition: all $transition-normal;
+
+  &:hover {
+    box-shadow: $shadow-lg;
+    transform: translateY(-2px);
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mt-6 {
+  margin-top: 24px;
+}
+
+.text-muted {
+  color: $dark-text-muted;
+}
+
+.text-center {
+  text-align: center;
+}
