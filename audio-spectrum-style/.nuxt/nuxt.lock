@@ -1,0 +1,9 @@
+{
+  "pid": 71792,
+  "startedAt": 1779153063317,
+  "command": "dev",
+  "cwd": "/Users/lizhenhu/Desktop/zhihe-0508-0514-3/audio-spectrum-style",
+  "port": 3000,
+  "hostname": "::1",
+  "url": "http://[::1]:3000"
+}
