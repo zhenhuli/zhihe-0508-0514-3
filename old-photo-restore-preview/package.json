@@ -1,0 +1,19 @@
+{
+  "name": "old-photo-restore-preview",
+  "version": "1.0.0",
+  "description": "老照片修复预览工具",
+  "scripts": {
+    "start": "node start.js",
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
