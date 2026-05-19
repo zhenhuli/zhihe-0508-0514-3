@@ -1,0 +1,171 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #1a365d;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2d3748;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.scaleInput {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.scaleSeparator {
+  color: #718096;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.select {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.select:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.resultCard {
+  background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 32px;
+  border: 1px solid #bee3f8;
+}
+
+.resultLabel {
+  color: #2c5282;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.resultValue {
+  color: #1a365d;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.resultUnit {
+  font-size: 18px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.resultDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed #90cdf4;
+}
+
+.resultDetail {
+  text-align: center;
+}
+
+.resultDetailValue {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b6cb0;
+}
+
+.resultDetailUnit {
+  font-size: 12px;
+  color: #718096;
+  margin-top: 4px;
+}
+
+.formula {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f7fafc;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.formulaCode {
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', Consolas, monospace;
+  background: #edf2f7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #d53f8c;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 12px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .resultValue {
+    font-size: 24px;
+  }
+
+  .scaleInput {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .scaleSeparator {
+    text-align: center;
+  }
+}

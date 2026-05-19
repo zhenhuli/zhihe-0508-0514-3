@@ -1,0 +1,12 @@
+{
+  "name": "map-scale-convert",
+  "version": "1.0.0",
+  "description": "纸质地图比例尺换算工具",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
