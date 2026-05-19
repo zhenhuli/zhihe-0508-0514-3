@@ -66,7 +66,8 @@ const drawParticles = () => {
     return
   }
 
-  ctx.clearRect(0, 0, width, height)
+  ctx.fillStyle = 'rgba(15, 23, 42, 0.15)'
+  ctx.fillRect(0, 0, width, height)
 
   const data = props.frequencyData
   const avgVolume = data.length > 0 ? data.reduce((a, b) => a + b, 0) / data.length : 0
@@ -89,21 +90,12 @@ const drawParticles = () => {
       continue
     }
 
-    const alpha = Math.floor(p.life * 255).toString(16).padStart(2, '0')
-    const size = p.size * p.life
-
     ctx.beginPath()
-    ctx.arc(p.x, p.y, size * 2, 0, Math.PI * 2)
-    ctx.fillStyle = p.color + Math.floor(p.life * 60).toString(16).padStart(2, '0')
-    ctx.fill()
-
-    ctx.beginPath()
-    ctx.arc(p.x, p.y, size, 0, Math.PI * 2)
-    ctx.fillStyle = p.color + alpha
-    ctx.shadowBlur = 20
+    ctx.arc(p.x, p.y, p.size * p.life, 0, Math.PI * 2)
+    ctx.fillStyle = p.color + Math.floor(p.life * 255).toString(16).padStart(2, '0')
+    ctx.shadowBlur = 15
     ctx.shadowColor = p.color
     ctx.fill()
-    ctx.shadowBlur = 0
   }
 
   animationId = requestAnimationFrame(drawParticles)

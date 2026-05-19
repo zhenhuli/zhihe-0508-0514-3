@@ -1,0 +1,25 @@
+{
+  "name": "braid-weave-sim",
+  "version": "1.0.0",
+  "description": "手工编织纹路模拟器 - 模拟麻花辫、平纹编织走势",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "weave",
+    "braid",
+    "canvas",
+    "simulator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.0",
+    "detect-port": "^1.5.1"
+  }
+}

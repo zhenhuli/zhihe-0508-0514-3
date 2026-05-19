@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手工编织纹路模拟器</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🧶 手工编织纹路模拟器</h1>
+      <p class="subtitle">模拟麻花辫、平纹编织走势，调节粗细与配色</p>
+    </header>
+
+    <main class="main-content">
+      <aside class="controls">
+        <div class="control-group">
+          <h3>编织模式</h3>
+          <div class="mode-buttons">
+            <button class="mode-btn active" data-mode="braid">麻花辫</button>
+            <button class="mode-btn" data-mode="plain">平纹编织</button>
+            <button class="mode-btn" data-mode="twill">斜纹编织</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <h3>线条粗细</h3>
+          <div class="slider-group">
+            <label for="thickness">粗细: <span id="thicknessValue">8</span>px</label>
+            <input type="range" id="thickness" min="2" max="20" value="8" step="1">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <h3>密度</h3>
+          <div class="slider-group">
+            <label for="density">密度: <span id="densityValue">20</span></label>
+            <input type="range" id="density" min="8" max="40" value="20" step="1">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <h3>配色方案</h3>
+          <div class="color-presets">
+            <button class="color-preset active" data-colors='["#E74C3C","#F39C12","#3498DB"]'>经典</button>
+            <button class="color-preset" data-colors='["#2C3E50","#34495E","#7F8C8D"]'>黑白灰</button>
+            <button class="color-preset" data-colors='["#1ABC9C","#2ECC71","#3498DB"]'>清新</button>
+            <button class="color-preset" data-colors='["#9B59B6","#E91E63","#FF5722"]'>艳丽</button>
+            <button class="color-preset" data-colors='["#8B4513","#D2691E","#DEB887"]'>棕色系</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <h3>自定义颜色</h3>
+          <div class="custom-colors">
+            <div class="color-input-group">
+              <label>颜色 1</label>
+              <input type="color" id="color1" value="#E74C3C">
+            </div>
+            <div class="color-input-group">
+              <label>颜色 2</label>
+              <input type="color" id="color2" value="#F39C12">
+            </div>
+            <div class="color-input-group">
+              <label>颜色 3</label>
+              <input type="color" id="color3" value="#3498DB">
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <h3>动画</h3>
+          <div class="animation-controls">
+            <button id="animateBtn" class="action-btn">▶ 播放动画</button>
+            <button id="resetBtn" class="action-btn secondary">↺ 重置</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <h3>导出</h3>
+          <button id="exportBtn" class="action-btn export">💾 导出图片</button>
+        </div>
+      </aside>
+
+      <section class="canvas-area">
+        <div class="canvas-wrapper">
+          <canvas id="weaveCanvas" width="800" height="600"></canvas>
+          <div class="canvas-info">
+            <span id="modeLabel">麻花辫模式</span>
+            <span id="sizeLabel">800 × 600</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/weave.js"></script>
+</body>
+</html>
